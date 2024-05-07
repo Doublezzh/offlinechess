@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="818dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/common_ll"
+        android:layout_width="818dp"
+        android:layout_height="192dp"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/chess_bg"
+
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/zyhei"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/common_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-64dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/negBtn"
+            android:layout_width="220dp"
+            android:layout_height="92dp"
+            android:background="@drawable/chess_selector_btn1"
+            android:fontFamily="@font/zyhei"
+            android:soundEffectsEnabled="false"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/posBtn"
+            style="@null"
+            android:layout_width="220dp"
+            android:layout_height="92dp"
+            android:background="@drawable/chess_selector_btn1"
+            android:fontFamily="@font/zyhei"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </LinearLayout>
+</RelativeLayout>

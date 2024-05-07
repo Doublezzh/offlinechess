@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="816dp"
+    android:layout_height="match_parent"
+
+    android:minWidth="816dp">
+
+
+    <LinearLayout
+        android:id="@+id/retry_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_gravity="center"
+        android:background="@mipmap/chess_bg"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/zyhei"
+            android:text="执棋"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="72dp"
+            android:background="@drawable/backgrounda"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/move_tab"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:minWidth="100dp"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                app:tabBackground="@drawable/tab_background"
+                app:tabIndicator="@null"
+                app:tabIndicatorColor="#fff"
+                app:tabSelectedTextColor="#000000"
+                app:tabTextColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retry_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-69dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/negBtn"
+            android:layout_width="220dp"
+            android:layout_height="92dp"
+            android:background="@drawable/chess_selector_btn1"
+            android:fontFamily="@font/zyhei"
+            android:soundEffectsEnabled="false"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+
+        <Space
+            android:layout_width="100dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/posBtn"
+            android:layout_width="220dp"
+            android:layout_height="92dp"
+
+            android:background="@drawable/chess_selector_btn1"
+            android:fontFamily="@font/zyhei"
+            android:soundEffectsEnabled="false"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-15dp"
+        android:fontFamily="@font/zyhei"
+        android:text="开始新局"
+        android:textColor="@color/white"
+        android:textSize="56sp" />
+
+</RelativeLayout>

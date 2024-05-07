@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/chess_setting"
+        android:layout_width="135dp"
+        android:layout_height="89dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginRight="59dp"
+        android:background="@drawable/chesss_setting_bg"
+        android:soundEffectsEnabled="false"
+        android:textSize="24dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_retry"
+        android:layout_width="220dp"
+        android:layout_height="92dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/chess_selector_btn1"
+        android:soundEffectsEnabled="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/zyhei"
+            android:gravity="center"
+            android:text="新局"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_recall"
+        android:layout_width="220dp"
+        android:layout_height="92dp"
+        android:layout_alignBottom="@id/rl_retry"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/rl_retry"
+        android:background="@drawable/chess_selector_btn1"
+        android:soundEffectsEnabled="false">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/zyhei"
+            android:gravity="center"
+            android:text="悔棋"
+            android:textColor="@color/white"
+            android:textSize="40sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

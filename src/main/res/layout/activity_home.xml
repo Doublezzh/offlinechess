@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/common_bg" />
+
+
+    <View
+        android:id="@+id/view_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/btn_pvm"
+        android:layout_width="410dp"
+        android:layout_height="517dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="83dp"
+        android:layout_toLeftOf="@id/view_center">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/chess_hc" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="人机对弈"
+            android:textColor="@color/chessHc"
+            android:textSize="80sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_pvp"
+
+        android:layout_width="410dp"
+        android:layout_height="517dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="83dp"
+        android:layout_marginRight="83dp"
+        android:layout_toRightOf="@id/view_center">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/chess_hh" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="双人对弈"
+            android:textColor="@color/chessHh"
+            android:textSize="80sp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/chess_selector_btn1"
+        android:soundEffectsEnabled="false"
+        android:text="帮助"
+        android:textSize="24dp"
+        android:visibility="gone" />
+
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="135dp"
+        android:layout_height="89dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="46dp"
+        android:layout_marginRight="59dp"
+        android:background="@drawable/chesss_setting_bg"
+        android:soundEffectsEnabled="false"
+        android:text="设置"
+        android:textSize="24dp" />
+
+
+    <ImageButton
+        android:id="@+id/mute_ib"
+        android:visibility="gone"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="50dp"
+        android:background="@mipmap/mute"
+        android:textSize="24dp" />
+
+    <ImageButton
+        android:id="@+id/game_over"
+        android:layout_width="135dp"
+        android:layout_height="89dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/chesss_back_bg"
+        android:soundEffectsEnabled="false"
+        android:textSize="24dp" />
+</RelativeLayout>

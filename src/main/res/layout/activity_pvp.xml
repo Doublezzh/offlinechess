@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/common_bg"
+    tools:context=".PvPActivity">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="135dp"
+        android:layout_height="89dp"
+        android:layout_marginLeft="57dp"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/chesss_back_bg"
+        android:soundEffectsEnabled="false" />
+
+    <ImageButton
+        android:id="@+id/mute_ib"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="57dp"
+        android:layout_marginBottom="50dp"
+        android:background="@mipmap/mute"
+        android:textSize="24dp"
+        android:visibility="gone" />
+</RelativeLayout>

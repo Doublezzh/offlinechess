@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+
+
+    <color name="chessHh">#E8A8A3</color>
+    <color name="chessHc">#9FD5F3</color>
+    <color name="black">#000000</color>
+    <color name="main_color">#ff0000</color>
+    <color name="switchbutton">#AEAEB2</color>
+    <color name="chess_line_color">#D3D3D3</color>
+    <color name="white">#fff</color>
+</resources>
